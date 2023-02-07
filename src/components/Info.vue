@@ -30,11 +30,13 @@ export default {
     components: {
         Picture
     },
+    props: {
+        email: String,
+        esta_reagindo: Boolean
+    },
     data() {
         return {
-            esta_reagindo: true,
             mostrar_email: false,
-            email: "alratão@akade.com",
             meu_link: "https://google.com",
             textoBotao: "Colaborar",
             inv_reacoes: ['Cryo', 'Pyro', 'Hydro'],

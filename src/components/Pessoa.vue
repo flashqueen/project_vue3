@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Sou apenas um viajante como você {{ nome }}.</h2>
-        <Info />
+        <Info :email="email" :esta_reagindo=true />
         <Form />
     </div>
 </template>
@@ -18,7 +18,8 @@ export default {
     },
     data() {
         return {
-            nome: "flashqueen"
+            nome: "flashqueen",
+            email: "flashq@akade.com"
         }
     }
 }
